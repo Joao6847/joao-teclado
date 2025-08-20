@@ -1,27 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR"> <!-- Define a linguagem da página -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Codificação de caracteres UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidade com IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+
+    <title>AnimeQ</title> <!-- Título da aba -->
+
+    <!-- Importação da fonte Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- Ícone da aba -->
+    <link rel="icon" type="image/png" href="img/4043233-anime-away-face-no-nobody-spirited_113254.png">
+
+    <!-- Reset de estilos e CSS principal -->
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Efeitos som</h1>
-        <h2>Aberturas de desenho animado</h2>
-        <section class="teclado">
-            <button class="tecla tecla-som-1"><img src="./img/217732c600369a0b0ee7c9eec761f8f04ea2d298a9f9511101f197efdf01dd74.jpg"></button>
-        <button class="tecla tecla-som-2"><img src="./img/8641cd99-093f-4f85-9a26-388494eb3a7f.avif"></button>
-         <button class="tecla tecla-som-2"><img src="./img/adventure-time-screensaver-hd-widescreen-3-1080p.jpg"></button>
-          <button class="tecla tecla-som-2"><img src="./img/asssdett.jpg"></button>
-           <button class="tecla tecla-som-2"><img src="./img/b1729355cfc7d3330820198b683478edd9e8f779c60ddfc46217d3ab613d0b0f.jpg"></button>
-            <button class="tecla tecla-som-2"><img src="./img/c962ba29f77d26f02e0718d58c2afb7e451084a0d86b289fe7a62279cb8076c7._SX1080_FMjpg_.jpg"></button>
-             <button class="tecla tecla-som-2"><img src="./img/Capturar-1-1200x597.jpg"></button>
-              <button class="tecla tecla-som-2"><img src="./img/coragem-cao-covarde-5.jpg"></button>
-               <button class="tecla tecla-som-2"><img src="./img/Gravity-Falls.jpg"></button>
+
+    <!-- Título principal -->
+    <h1>Aberturas de animes</h1>
+
+    <!-- Container das teclas -->
+    <section class="teclado">
+        <!-- Cada botão contém uma imagem ilustrativa -->
+        <button class="tecla tecla_som1"><img src="./img/217732c600369a0b0ee7c9eec761f8f04ea2d298a9f9511101f197efdf01dd74.jpg" alt="Som 1"></button>
+        <button class="tecla tecla_som2"><img src="img/asssdett.jpg" alt="Som 2"></button>
+        <button class="tecla tecla_som3"><img src="img/Gravity-Falls.jpg" alt="Som 3"></button>
+
+        <button class="tecla tecla_som4"><img src="img/8641cd99-093f-4f85-9a26-388494eb3a7f.avif" alt="Som 4"></button>
+        <button class="tecla tecla_som5"><img src="img/coragem-cao-covarde-5.jpg" alt="Som 5"></button>
+        <button class="tecla tecla_som6"><img src="img/c962ba29f77d26f02e0718d58c2afb7e451084a0d86b289fe7a62279cb8076c7._SX1080_FMjpg_.jpg" alt="Som 6"></button>
+
+        <button class="tecla tecla_som7"><img src="img/adventure-time-screensaver-hd-widescreen-3-1080p.jpg" alt="Som 7"></button>
+        <button class="tecla tecla_som8"><img src="img/b1729355cfc7d3330820198b683478edd9e8f779c60ddfc46217d3ab613d0b0f.jpg" alt="Som 8"></button>
+        <button class="tecla tecla_som9"><img src="img/Capturar-1-1200x597.jpg" alt="Som 9"></button>
     </section>
-        </section>
-    
-    </body>
+
+    <!-- Áudios correspondentes aos botões -->
+    <audio src="./som/ABERTURA APENAS UM SHOW (ORIGINAL).mp3" id="som_tecla_som1"></audio>
+    <audio src="./som/Iframe Abertura - Du, Dudu E Edu [MjwMghNPhtI].mp3" id="som_tecla_som2"></audio>
+    <audio src="./som/Iframe Abertura Hora de Aventura ( Português ) [HXlOJn7YA90].mp3" id="som_tecla_som3"></audio>
+    <audio src="./som/Iframe Clarêncio, o Otimista - Abertura HDTV [4v7zX9AqxHA].mp3" id="som_tecla_som4"></audio>
+    <audio src="./som/Iframe Coragem, o Cão Covarde - Abertura PT BR [R2ygPO3FlPs].mp3" id="som_tecla_som5"></audio>
+    <audio src="./som/Iframe Gravity Falls - Weirdmageddon Opening Theme Song - HD [uWvdqkl2UH4].mp3" id="som_tecla_som6"></audio>
+    <audio src="./som/Iframe Steven Universo - Abertura [HD 1080p] [L3RxFs5yfxk].mp3" id="som_tecla_som7"></audio>
+    <audio src="./som/O Incrivel Mundo de Gumball - Abertura.mp3" id="som_tecla_som8"></audio>
+    <audio src="./som/Rick And Morty Intro.mp3" id="som_tecla_som9"></audio>
+
+    <!-- Script principal -->
+    <script src="main.js"></script>
+</body>
 </html>
